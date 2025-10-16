@@ -4,6 +4,7 @@ import 'dart:convert';
 
 class PersonServices {
   final String baseUrl = 'https://thronesapi.com/api/v2';
+  // final String aliasesUrl = 'https://anapioficeandfire.com/api/characters';
 
   Future<List<Person>> getAllPersons() async {
     try {

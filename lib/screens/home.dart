@@ -116,6 +116,10 @@ class _HomeScreenState extends State<HomeScreen> {
                             person.fullName,
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
+                          subtitle: Text(
+                            person.title,
+                            style: TextStyle(fontSize: 12),
+                          ),
                           trailing: Icon(
                             Icons.chevron_right,
                             color: Colors.grey[600],
@@ -126,7 +130,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   } else if (snapshot.hasError) {
                     return Text('Error');
                   } else {
-                    return CircularProgressIndicator();
+                    return Center(child: CircularProgressIndicator());
                   }
                 },
               ),

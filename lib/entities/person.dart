@@ -6,6 +6,7 @@ class Person {
   final String title;
   final String family;
   final String imageUrl;
+  String? alias;
 
   Person({
     required this.id,
@@ -15,6 +16,7 @@ class Person {
     required this.title,
     required this.family,
     required this.imageUrl,
+    this.alias,
   });
 
   factory Person.fromJson(Map<String, dynamic> json) {
